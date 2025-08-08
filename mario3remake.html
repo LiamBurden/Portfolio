@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Liam Burden Portfolio - Mario 3 Remake</title>
+    <meta name="author" content="Liam Burden">
+    <link rel="icon" type="image/x-icon" href="images/other/favicon.ico">
+
+</head>
+
+<body>
+    <div class="button-container">
+        <div class="left-buttons">
+            <a href="index.html" class="button button1">Home</a>
+        </div>
+        <div class="right-buttons">
+            <a href="mailto:liamburden1493@outlook.com" class="button button1">E-Mail</a>
+            <a href="https://www.linkedin.com/in/liam-burden-673283251/" class="button button1">LinkedIn</a>
+            <a href="https://radicaldieway.itch.io" class="button button1">Itch.io</a>
+            <a href="https://www.youtube.com/@LiamBurden1493" class="button button1">Youtube</a>
+        </div>
+    </div>
+<div>
+ <h1>Super Mario Bros. 3 Remake</h1>
+
+
+    <div class="game1">
+        <div class="text-container">
+            <p> Mario 3 requires no introduction from me with the game being a classic however, 
+                I made my own version using C++ and SDL for a module at my university. 
+                To the right here is a video of my version of the game.
+            </p>
+        </div>
+        
+        <div class="image-container">
+            <iframe src="https://www.youtube.com/embed/MMbo6zWBnJ4?si=MqA9IX9dcfyw5Kpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="game1">
+        <div class="text-container">
+            <p>
+                To use a tile map system, I used software called "Tiled" to create them, 
+                I had two layers one for traditional tiles (blocks, coins, powerup blocks, etc) 
+                and one for enemies and the player spawn. Using this external software allowed me 
+                to create and edit levels very quickly. However, I needed to develop a method of 
+                loading them into my game's memory myself. To do this I exported the levels as TMJ 
+                files and used the "nlohmann" library to access and read them. Once the map file is 
+                loaded, we analyse each tile based on the integer at the coordinate to place the 
+                corresponding block and give it any required attributes, such as containing a fire 
+                flower, being semi-solid (only has top collision for example), or being breakable. 
+                This approach also made it very easy to add tiles to the game as all I had to do was 
+                add the new tile ID and its attributes to the function used for analysis. It would now 
+                have functionality instead of being shown as a generic tile that is completely static 
+                and solid, they would be like this by default as I stored all the tile assets in a single 
+                PNG file which saved memory as the tile map class would store the image once instead of 
+                each tile storing its image.
+            </p>
+        </div>
+        
+        <div class="image-container">
+            <img src="images/SMB3/SMB3_1-1.png" alt="Image">
+        </div>
+    </div>  
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Liam Burden Portfolio - "Theatrhythm" playing Python bot</title>
+    <meta name="author" content="Liam Burden">
+    <link rel="icon" type="image/x-icon" href="images/other/favicon.ico">
+
+</head>
+
+<body>
+    <div class="button-container">
+        <div class="left-buttons">
+            <a href="index.html" class="button button1">Home</a>
+        </div>
+        <div class="right-buttons">
+            <a href="mailto:liamburden1493@outlook.com" class="button button1">E-Mail</a>
+            <a href="https://www.linkedin.com/in/liam-burden-673283251/" class="button button1">LinkedIn</a>
+            <a href="https://radicaldieway.itch.io" class="button button1">Itch.io</a>
+            <a href="https://www.youtube.com/@LiamBurden1493" class="button button1">Youtube</a>
+        </div>
+    </div>
+<div>
+ <h1>"Theatrhythm" playing Python bot</h1>
+
+
+    <div class="game1">
+        <div class="text-container">
+            <p> 
+                “Final Bar Line Theatrhythm” is a rhythm game by Square Enix featuring numerous songs from their Final Fantasy series. I wanted to try breaking the game using code. 
+            </p>
+        </div>
+        
+        <div class="image-container">
+            <iframe src="https://www.youtube.com/embed/KmitNdxY3ck?si=UDbiEL00oRJUQazp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="game2">
+        <div class="text-container">
+            <p>
+                First, I connected to my PlayStation 5 via remote play to be able to use a computer to control the games via Python. To do so, I used the win32api to mimic keyboard inputs. But not before I screenshot the play area and used the CV2 library to recognise the music note elements within the game. Each image also has a set of those keyboard inputs mapped, so everything it sees a red dot will mimic pressing the cross button. This project was a great time that let me play with new libraries, but the project was very heavily limited by my internet connection speeds meaning the precision of reacting to the screen was very tough to keep in time with the music.
+            </p>
+        </div>
+        
+        <!--<div class="image-container">
+            <img src="images/SMB3/SMB3_1-1.png" alt="Image">
+        </div>>
+    </div>  
+</div>
+</body>
+</html>
