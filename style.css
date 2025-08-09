@@ -306,6 +306,12 @@ h3 {
     background-color: #362022; 
     color: #E8D4D3; 
 }
+  h2 {
+    color: #E8D4D3;
+}
+h3 {
+    color: #E8D4D3;
+}
 }
 
 .button {
