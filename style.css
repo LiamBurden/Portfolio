@@ -9,6 +9,16 @@ body {
     color: #362022;
 }
 
+@media (prefers-color-scheme: dark)
+{
+    body {
+    background-color: #362022;
+}
+
+* {
+    color: #E8D4D3;
+}
+}
 h1 {
     text-align: center;
     margin: 0 auto;
@@ -290,6 +300,13 @@ h3 {
     display: flex;
     justify-content: flex-end; /* Aligns buttons to the right */
 }
+@media (prefers-color-scheme: dark)
+{
+      .button1 {
+    background-color: #362022; 
+    color: #E8D4D3; 
+}
+}
 
 .button {
     margin: 5px;
@@ -314,7 +331,14 @@ h3 {
     background-color: #f9f9f9; /* Light background color */
     cursor: pointer;          /* Change cursor to pointer for better UX */
 }
-
+@media (prefers-color-scheme: dark)
+{
+    .filter-container select 
+    {
+    border: 1px solid #ccc;    /* Border around the select */
+    background-color: #362022; /* Light background color */
+    }
+}
 .filter-container select:focus {
     border-color: #007bff;     /* Change border color on focus */
     outline: none;             /* Remove default outline */
