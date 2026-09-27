@@ -624,19 +624,22 @@ h0 {
 }
 
 /* ---- Aero Navigation Bar ---- */
+:root {
+    --nav-height: 4vh;
+}
+
 .button-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: var(--nav-height);
     z-index: 1000;
 
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 
-    margin: 0;
-    
     background:
         linear-gradient(
             #ffffff 0%,
@@ -648,6 +651,12 @@ h0 {
     border: 1px solid rgba(0, 0, 0, 0.35);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
+
+body {
+    margin: 0;
+    padding-top: var(--nav-height);
+}
+
 
 
 /* Left and right groups */
@@ -662,18 +671,17 @@ h0 {
     display: flex;
     align-items: center;
 
-    padding: 4px 10px;
+    padding: 0 1vw;
 
     color: #1b1b1b;
     text-decoration: none;
-
     cursor: pointer;
 
     border: 0;
     background: transparent;
 
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, system-ui, sans-serif;
-    font-size: 12px;
+    font-size: 1.5vh;
 }
 
 /* Hover */
